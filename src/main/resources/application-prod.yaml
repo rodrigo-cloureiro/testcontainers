@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    show-sql: false
+
+    hibernate:
+      ddl-auto: validate
+
+  sql:
+    init:
+      mode: never
+
+  cache:
+    type: redis
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      ttl: 100
+
+logging:
+  level:
+    root: info
+    org.springframework: warn
